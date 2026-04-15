@@ -203,7 +203,8 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'flex-start',
     padding: '20px 10px 40px',
-    fontFamily: "'Playfair Display', serif",
+    fontFamily: "'Montserrat', sans-serif",
+    fontWeight: 400,
   },
   card: {
     width: '100%',
@@ -239,7 +240,7 @@ const styles = {
     display: 'inline-block',
     background: 'linear-gradient(135deg, #C9A84C, #FFD700, #C9A84C)',
     color: '#1a0033',
-    fontFamily: "'Playfair Display', serif",
+    fontFamily: "'Montserrat', sans-serif",
     fontSize: 13,
     fontWeight: 700,
     letterSpacing: 3,
@@ -264,7 +265,7 @@ const styles = {
     marginBottom: 6,
   },
   subtitle: {
-    fontFamily: "'Playfair Display', serif",
+    fontFamily: "'Montserrat', sans-serif",
     fontSize: 13,
     color: '#C9A84C',
     letterSpacing: 4,
@@ -273,7 +274,7 @@ const styles = {
 
   // Texte
   invitationText: { textAlign: 'center', margin: '8px 0' },
-  invitP: { fontSize: 20, color: '#E8D5B7', lineHeight: 1.8, fontStyle: 'italic' },
+  invitP: { fontSize: 17, color: '#E8D5B7', lineHeight: 1.9, fontStyle: 'italic', fontWeight: 300 },
   gold: { color: '#FFD700', fontStyle: 'normal', fontWeight: 600 },
 
   // Secret
@@ -285,7 +286,7 @@ const styles = {
     padding: '10px 18px',
     margin: '12px 0',
   },
-  secretP: { fontFamily: "'Playfair Display', serif", fontSize: 15, color: '#FFD700', letterSpacing: 1 },
+  secretP: { fontFamily: "'Montserrat', sans-serif", fontSize: 13, color: '#FFD700', letterSpacing: 1, fontWeight: 600 },
 
   // Détails
   detailsGrid: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, margin: '14px 0' },
@@ -299,7 +300,7 @@ const styles = {
   detailFull: { gridColumn: '1 / -1' },
   detailIcon: { fontSize: 20, marginBottom: 5, display: 'block' },
   detailLabel: {
-    fontFamily: "'Playfair Display', serif",
+    fontFamily: "'Montserrat', sans-serif",
     fontSize: 11,
     color: '#C9A84C',
     letterSpacing: 3,
@@ -307,7 +308,7 @@ const styles = {
     display: 'block',
     marginBottom: 4,
   },
-  detailValue: { fontFamily: "'Playfair Display', serif", fontSize: 19, color: '#F5E6C8', fontWeight: 600, lineHeight: 1.3 },
+  detailValue: { fontFamily: "'Montserrat', sans-serif", fontSize: 16, color: '#F5E6C8', fontWeight: 700, lineHeight: 1.4 },
 
   // Dress code
   dressCode: {
@@ -318,8 +319,8 @@ const styles = {
     margin: '10px 0',
     textAlign: 'center',
   },
-  dcLabel: { fontFamily: "'Playfair Display', serif", fontSize: 11, color: '#C9A84C', letterSpacing: 3, textTransform: 'uppercase', display: 'block', marginBottom: 5 },
-  dcValue: { fontFamily: "'Playfair Display', serif", fontSize: 22, color: '#E8D5B7', fontWeight: 600 },
+  dcLabel: { fontFamily: "'Montserrat', sans-serif", fontSize: 11, color: '#C9A84C', letterSpacing: 3, textTransform: 'uppercase', display: 'block', marginBottom: 5 },
+  dcValue: { fontFamily: "'Montserrat', sans-serif", fontSize: 18, color: '#E8D5B7', fontWeight: 700, letterSpacing: 1 },
   colorDots: { marginTop: 6 },
   dot: { display: 'inline-block', width: 14, height: 14, borderRadius: '50%', margin: '0 4px' },
 
@@ -331,7 +332,7 @@ const styles = {
     borderRadius: '0 8px 8px 0',
     margin: '10px 0',
   },
-  noticeP: { fontSize: 18, color: '#E8D5B7', lineHeight: 1.6 },
+  noticeP: { fontSize: 14, color: '#E8D5B7', lineHeight: 1.7, fontWeight: 400 },
 
   // Compte à rebours
   countdownWrap: {
@@ -342,20 +343,20 @@ const styles = {
     padding: '12px 10px',
     margin: '12px 0',
   },
-  countdownTitle: { fontFamily: "'Playfair Display', serif", fontSize: 12, color: '#C9A84C', letterSpacing: 3, textTransform: 'uppercase', display: 'block', marginBottom: 8 },
+  countdownTitle: { fontFamily: "'Montserrat', sans-serif", fontSize: 12, color: '#C9A84C', letterSpacing: 3, textTransform: 'uppercase', display: 'block', marginBottom: 8 },
   countdownRow: { display: 'flex', justifyContent: 'center', gap: 20 },
   countdownUnit: { display: 'flex', flexDirection: 'column', alignItems: 'center' },
-  countdownNum: { fontFamily: "'Playfair Display', serif", fontSize: 34, color: '#FFD700', fontWeight: 700, lineHeight: 1 },
-  countdownLabel: { fontFamily: "'Playfair Display', serif", fontSize: 13, color: '#C9A84C', marginTop: 4 },
+  countdownNum: { fontFamily: "'Montserrat', sans-serif", fontSize: 34, color: '#FFD700', fontWeight: 700, lineHeight: 1 },
+  countdownLabel: { fontFamily: "'Montserrat', sans-serif", fontSize: 13, color: '#C9A84C', marginTop: 4 },
 
   // RSVP
   rsvpSection: { textAlign: 'center', margin: '18px 0 10px' },
-  rsvpLabel: { fontFamily: "'Playfair Display', serif", fontSize: 13, color: '#C9A84C', letterSpacing: 3, textTransform: 'uppercase', display: 'block', marginBottom: 12 },
+  rsvpLabel: { fontFamily: "'Montserrat', sans-serif", fontSize: 13, color: '#C9A84C', letterSpacing: 3, textTransform: 'uppercase', display: 'block', marginBottom: 12 },
   rsvpBtn: {
     display: 'inline-block',
     background: 'linear-gradient(135deg, #C9A84C, #FFD700, #C9A84C)',
     color: '#1a0033',
-    fontFamily: "'Playfair Display', serif",
+    fontFamily: "'Montserrat', sans-serif",
     fontSize: 17,
     fontWeight: 700,
     letterSpacing: 2,
@@ -365,7 +366,7 @@ const styles = {
     textDecoration: 'none',
     boxShadow: '0 4px 20px rgba(201,168,76,0.55)',
   },
-  rsvpDate: { fontFamily: "'Playfair Display', serif", fontSize: 17, color: '#C9A84C', marginTop: 10, fontStyle: 'italic' },
+  rsvpDate: { fontFamily: "'Montserrat', sans-serif", fontSize: 17, color: '#C9A84C', marginTop: 10, fontStyle: 'italic' },
 
   // Footer
   footer: { textAlign: 'center', marginTop: 14 },
