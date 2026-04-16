@@ -125,7 +125,7 @@ export default function App() {
         {/* Notice importante */}
         <div style={styles.importantNotice}>
           <p style={styles.noticeP}>
-            ⏰ &nbsp; Merci d'être présents <strong style={styles.gold}>avant 18h00</strong> afin d'accueillir Maman comme il se doit.
+            ⏰ &nbsp; Merci d'être présents <strong style={styles.gold}>avant 19h00</strong> afin d'accueillir Maman comme il se doit.
           </p>
         </div>
 
