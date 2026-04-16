@@ -14,7 +14,7 @@ const STARS = Array.from({ length: 12 }, (_, i) => ({
 
 // Compte à rebours
 function Countdown() {
-  const target = new Date('2026-05-30T18:30:00')
+  const target = new Date('2026-05-30T18:00:00')
   const [diff, setDiff] = useState(() => target - Date.now())
 
   useEffect(() => {
@@ -117,25 +117,15 @@ export default function App() {
         {/* Détails */}
         <div style={styles.detailsGrid}>
           <DetailItem icon="📅" label="Date" value={<>Samedi<br />30 Mai 2026</>} />
-          <DetailItem icon="🕕" label="Arrivée des invités" value="18h30" />
+          <DetailItem icon="🕕" label="Arrivée des invités" value="18h00" />
           <DetailItem icon="📍" label="Lieu" value="À préciser" fullWidth />
         </div>
 
-        {/* Dress Code */}
-        <div style={styles.dressCode}>
-          <span style={styles.dcLabel}>👗 &nbsp; Code Vestimentaire</span>
-          <div style={styles.dcValue}>Violet &amp; Or</div>
-          <div style={styles.colorDots}>
-            {['#6B21A8', '#C084FC', '#FFD700'].map(c => (
-              <span key={c} style={{ ...styles.dot, background: c }} />
-            ))}
-          </div>
-        </div>
 
         {/* Notice importante */}
         <div style={styles.importantNotice}>
           <p style={styles.noticeP}>
-            ⏰ &nbsp; Merci d'être présents <strong style={styles.gold}>avant 19h00</strong> afin d'accueillir Maman comme il se doit.
+            ⏰ &nbsp; Merci d'être présents <strong style={styles.gold}>avant 18h00</strong> afin d'accueillir Maman comme il se doit.
           </p>
         </div>
 
@@ -309,20 +299,6 @@ const styles = {
     marginBottom: 4,
   },
   detailValue: { fontFamily: "'Montserrat', sans-serif", fontSize: 16, color: '#F5E6C8', fontWeight: 700, lineHeight: 1.4 },
-
-  // Dress code
-  dressCode: {
-    background: 'linear-gradient(135deg, rgba(138,43,226,0.2), rgba(201,168,76,0.1))',
-    border: '1px solid rgba(201,168,76,0.35)',
-    borderRadius: 8,
-    padding: '12px 18px',
-    margin: '10px 0',
-    textAlign: 'center',
-  },
-  dcLabel: { fontFamily: "'Montserrat', sans-serif", fontSize: 11, color: '#C9A84C', letterSpacing: 3, textTransform: 'uppercase', display: 'block', marginBottom: 5 },
-  dcValue: { fontFamily: "'Montserrat', sans-serif", fontSize: 18, color: '#E8D5B7', fontWeight: 700, letterSpacing: 1 },
-  colorDots: { marginTop: 6 },
-  dot: { display: 'inline-block', width: 14, height: 14, borderRadius: '50%', margin: '0 4px' },
 
   // Notice
   importantNotice: {
