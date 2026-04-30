@@ -118,14 +118,19 @@ export default function App() {
         <div style={styles.detailsGrid}>
           <DetailItem icon="📅" label="Date" value={<>Samedi<br />30 Mai 2026</>} />
           <DetailItem icon="🕕" label="Arrivée des invités" value="18h00" />
-          <DetailItem icon="📍" label="Lieu" value="À préciser" fullWidth />
+          <DetailItem
+            icon="📍"
+            label="Lieu"
+            value={<>O&apos;turquoise Event<br />93R6+WG5 Poste R370 CIE, Abidjan</>}
+            fullWidth
+          />
         </div>
 
 
         {/* Notice importante */}
         <div style={styles.importantNotice}>
           <p style={styles.noticeP}>
-            ⏰ &nbsp; Merci d'être présents <strong style={styles.gold}>avant 19h00</strong> afin d'accueillir Maman comme il se doit.
+            ⏰ &nbsp; Merci d'être présents <strong style={styles.gold}>avant 18h00</strong> afin d'accueillir Maman comme il se doit.
           </p>
         </div>
 
