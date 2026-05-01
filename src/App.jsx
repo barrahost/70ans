@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import logo from '/logo.png'
 
 const TALLY_URL = 'https://tally.so/r/J9JyA4'
+const MAPS_URL = 'https://www.google.com/maps?q=93R6+WG5+O%27turquoise+Event,+Poste+R370+CIE,+Abidjan&ftid=0xfc1ed00e2a5a5af:0xbc446ea9b025f077&entry=gps'
 
 // Étoiles aléatoires
 const STARS = Array.from({ length: 12 }, (_, i) => ({
@@ -121,7 +122,19 @@ export default function App() {
           <DetailItem
             icon="📍"
             label="Lieu"
-            value={<>O&apos;turquoise Event<br />93R6+WG5 Poste R370 CIE, Abidjan</>}
+            value={
+              <>
+                <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" style={styles.placeLink}>
+                  O&apos;turquoise Event
+                </a>
+                <br />
+                <span>93R6+WG5 Poste R370 CIE, Abidjan</span>
+                <br />
+                <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" style={styles.mapLink}>
+                  Ouvrir dans Google Maps
+                </a>
+              </>
+            }
             fullWidth
           />
         </div>
@@ -304,6 +317,19 @@ const styles = {
     marginBottom: 4,
   },
   detailValue: { fontFamily: "'Montserrat', sans-serif", fontSize: 16, color: '#F5E6C8', fontWeight: 700, lineHeight: 1.4 },
+  placeLink: {
+    color: '#FFD700',
+    textDecoration: 'none',
+    fontWeight: 700,
+  },
+  mapLink: {
+    display: 'inline-block',
+    marginTop: 8,
+    color: '#C9A84C',
+    textDecoration: 'underline',
+    fontSize: 14,
+    fontWeight: 600,
+  },
 
   // Notice
   importantNotice: {
